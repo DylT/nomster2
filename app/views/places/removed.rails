@@ -1,0 +1,8 @@
+<!-- Latest Photo -->
+    <% if place.photos.present? %>
+      <div class="index_photo img-fluid">
+        <% if place.photos.last.picture.present? %>
+          <%= image_tag place.photos.last.picture.url %>
+        <% end %>
+      </div>
+    <% end %>
